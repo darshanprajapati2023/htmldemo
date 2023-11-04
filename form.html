@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width:350px"><legend>Registration Form</legend>
+    <form enctype="multipart/form-data" method="post" action="#">
+        First Name:<input type="text" name="txtFname" id="txtFname" value="Enter Fname" readonly="true" disabled="disabled"> <!--    placeholder="Enter Fname"--><br>
+        Password:<input type="password" name="pswReg" id="pswReg"><br>
+        Gender:<input type="radio" id="male" disabled name="Gender" value="MALE">Male
+        <input type="radio" id="female" checked name="Gender" value="FEMALE">Female<br>
+        Hobby:
+        <input type="checkbox" name="Hobby[]" id="read" checked disabled value="READ">Read
+        <input type="checkbox" name="hobby[]" id="write" value="WRITE">Write
+        <input type="checkbox" name="hobby[]" id="travel" value="TRAVEL">Travel<br>
+        File Attach:<input type="file" id="upResume" name="upResume"><br>
+        Photo:<input type="image" src="Image/adbulkalam.jpg" width="150" height="150"><br>
+        City:
+        <select id="dropCity" name="dropCity[]" size="4" multiple><!--  disabled -->
+            <option value="0">Select City</option>
+            <option value="ahm">Ahmedabad</option>
+            <option value="surat" selected>Surat</option>
+            <option value="bar">Baroda</option>
+            <option value="raj">Rajkot</option>
+        </select><br><br><br>
+        <select id="dropFood" name="dropFood[]" multiple size="10">
+                <optgroup label="Gujarati">
+                    <option>Daal</option>
+                    <option>Rotla</option>
+                    </optgroup>
+                <optgroup label="Punjabi">
+                    <option>Lassi</option>
+                    <option>paratha</option>
+                </optgroup>
+        </select><br><br>
+        Message Box:
+        <textarea cols="50" rows="10"></textarea><br>
+        <input type="submit" name="BTNSave" value="Save">
+        <input type="reset" name="BTNRESET" value="Clear">
+    </form>
+</fieldset>
+</body>
+</html>
