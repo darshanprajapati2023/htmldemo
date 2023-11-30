@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px" cellspacing="10" cellpadding="10">
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="txtfName" id="txtfName" value="Enter Name"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="regPsw" id="regPsw" value="Enter Password"></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender">Male
+            <input type="radio" name="gender">FeMale
+            <input type="radio" name="gender">Other
+        </td>
+    </tr>
+    <tr>
+        <td>Hobby</td>
+        <td><input type="checkbox" name="Hobby[]" id="Hobby[]" value="Read">Read
+            <input type="checkbox" name="Hobby[]" id="Hobby[]" value="Writing">Writing
+            <input type="checkbox" name="Hobby[]" id="Hobby[]" value="Traveling">Traveling
+        </td>
+    </tr>
+    <tr>
+        <td>File Upload</td>
+        <td><input type="file" name="upRes" id="upRes" value="Upload File"></td>
+    </tr>
+    <tr>
+        <td>Photo</td>
+        <td><input type="image" src="Image/adbulkalam.jpg" width="150" height="150">
+    </tr>
+    <tr>
+        <td>Select City</td>
+        <td><select name="listcity" id="listcity" size="5">
+            <option value="0">Select City</option>
+            <option value="1">Ahmedabad</option>
+            <option value="2">Vadodara</option>
+            <option value="3">Surat</option>
+            <option value="4">Jamnagar</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td><select id="dropFood" name="dropFood[]" multiple size="10">
+            <optgroup label="Gujarati">
+                <option>Daal</option>
+                <option>Rotla</option>
+                </optgroup>
+            <optgroup label="Punjabi">
+                <option>Lassi</option>
+                <option>paratha</option>
+            </optgroup>
+    </select></td>
+    </tr>
+    <tr>
+        <td>Message Box:
+            <textarea cols="10" rows="10"></textarea><br>
+            <input type="submit" name="BTNSave" value="Save">
+            <input type="reset" name="BTNRESET" value="Clear"></td>
+    </tr>
+    </table>
+</body>
+</html>
